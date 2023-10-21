@@ -14,11 +14,10 @@ jobs:
         with:
           node-version: '20.x'
       - name: Build web-app
-        run:
-          npm ci
+        run: npm ci
           npm run build
         env:
-          REACT_APP_OMBD_KEY: ${{secrets.REACT_APP_OMBD_KEY}}
+          REACT_APP_OMBD_KEY: ${{vars.REACT_APP_OMBD_KEY}}
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
