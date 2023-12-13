@@ -1,6 +1,6 @@
 {
   "homepage": "https://vonschappler.github.io/react-use-popcorn",
-  "name": "use-popcorn",
+  "name": "react-use-popcorn",
   "version": "0.3.0",
   "private": true,
   "dependencies": {
